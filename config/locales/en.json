@@ -1,0 +1,6 @@
+{
+	"Welcome": "Welcome ALEX",
+	"A brand new app.": "A brand new app.",
+  	"Error.Passport.Password.Wrong": "Incorrect username or password. Please try again.",
+  	"Error.Passport.User.Exists": "User already exist. Please try again."
+}

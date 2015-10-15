@@ -1,0 +1,1 @@
+{"nfs":{"/vagrant":{"nfs":{"mount_options":["dmode=777","fmode=666"]},"guestpath":"/vagrant","hostpath":"/home/alex/NodeProject/sails/testPriject","disabled":false,"type":"nfs","map_uid":1000,"map_gid":1000,"nfs_udp":true,"nfs_version":3,"uuid":"1246947709","linux__nfs_options":["rw","no_subtree_check","all_squash","anonuid=1000","anongid=1000","fsid=1246947709"]}}}

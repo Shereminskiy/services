@@ -1,0 +1,15 @@
+<!-- Default home page -->
+<div class="main container clearfix">
+    <ul class="getting-started">
+    <% users.forEach(function(index){ %>
+        <div>
+            Username: <%=index.username%>
+        </div>
+        <div>
+            Email: <%=index.email%>
+        </div>
+    <%})%>
+    </ul>
+
+    <%- include ../partials/links.ejs %>
+</div>

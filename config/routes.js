@@ -40,12 +40,39 @@ module.exports.routes = {
   },
   'get /admin/users' : 'AdminUserController.view',
 
+  'get /admin/categories' : 'admin/CategoriesController:index',
+
+  'get /admin/categories/create' : 'admin/CategoriesController:create',
+
+  //'/admin/categories/create' : {
+  //  controller: "AdminCategoriesController",
+  //  action: "create",
+  //  view: 'admin/categories/create',
+  //  locals: {
+  //    layout: 'admin-layout'
+  //  }
+  //},
+
+
+
+  //'get /admin/categories' : {
+  //  controller: "AdminCategoriesController",
+  //  action: "index",
+  //  view: 'admin/categories/index',
+  //  locals: {
+  //    layout: 'admin-layout'
+  //  }
+  //},
+
+
+
   //
   // Passport Auth Routes
   //
   //'get /login':  'AuthController.login',
   //'post /login': 'AuthController.loginProcess',
   //'/logout':     'AuthController.logout'
+
   'get /hi': 'UserController.hi',
   'get /user': 'UserController.view',
   'get /user/create': 'UserController.create',

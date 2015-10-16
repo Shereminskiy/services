@@ -30,8 +30,8 @@ module.exports = {
     // - info
     // - verbose
     //
-    log: {
-        level: 'verbose'
-    }
+    //log: {
+    //    level: 'verbose'
+    //}
 
 };

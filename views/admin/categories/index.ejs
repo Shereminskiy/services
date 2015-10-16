@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-md-5">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% _.each(categories, function(category){ %>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><%=category.title%></td>
+                    <td>
+                        <a href="#" class="btn btn-primary btn-sm " role="button">View</a>
+                        <a href="#" class="btn btn-danger btn-sm " role="button">Delete</a>
+                    </td>
+                </tr>
+            <% }) %>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-5 col-md-offset-1">
+        <h3>Create Category</h3>
+        <form id="add_new_category">
+            <input type="hidden" name="_csrf" value="<%= _csrf %>">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" name="title" placeholder="Title">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+</div>
